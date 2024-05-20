@@ -1,15 +1,12 @@
-<script setup lang="ts">
-import { onHide, onLaunch, onShow } from '@dcloudio/uni-app'
-
-onLaunch(() => {
-  console.log('App Launch')
-})
-onShow(() => {
-  console.log('App Show')
-})
-onHide(() => {
-  console.log('App Hide')
-})
+<script>
+// 在这里编写JavaScript代码
 </script>
 
-<style></style>
+<!-- eslint-disable vue/valid-template-root -->
+<template>
+  <!-- App.vue -->
+</template>
+
+  <style>
+    /* 在这里编写CSS样式 */
+</style>

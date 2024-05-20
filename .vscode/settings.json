@@ -7,10 +7,16 @@
   "prettier.enable": false,
   "editor.formatOnSave": false,
 
+  // 关闭编辑器内置样式检查（避免与stylelint冲突）
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
   // Auto fix
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "never"
+    "source.organizeImports": "never",
+    "source.fixAll.stylelint": "explicit" // stylelint
   },
 
   // Silent the stylistic rules in you IDE, but still auto fix them
@@ -44,5 +50,14 @@
     "gql",
     "graphql",
     "astro"
+  ],
+  // stylelint 需要检查的文件
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "scss",
+    "vue",
+    "sass"
   ]
 }
