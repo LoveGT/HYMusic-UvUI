@@ -1,7 +1,6 @@
 {
   "name": "uni-preset-vue",
   "version": "0.0.0",
-  "type": "module",
   "description": "A fresh and elegant uniapp template, based on Vue3、Vite3、TypeScript、UvUI. 一个基于Vue3、Vite3、TypeScript、UvUI and UnoCSS的清新优雅的uniapp模版。",
   "scripts": {
     "dev:app": "uni -p app",
