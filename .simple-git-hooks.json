@@ -1,4 +1,4 @@
 {
   "pre-commit": "npx lint-staged",
-  "commit-msg": "node scripts/verify-commit.js"
+  "commit-msg": "npx --no -- commitlint --edit $1"
 }

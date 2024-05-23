@@ -13,16 +13,16 @@ const commitRE
 if (!commitRE.test(msg)) {
   console.error(
     `  ${pico.white(pico.bgRed(' ERROR '))} ${pico.red(
-      `invalid commit message format.`,
+      `无效的git commit message格式.`,
     )}\n\n${
       pico.red(
-        `  Proper commit message format is required for automated changelog generation. Examples:\n\n`,
+        `  需要正确的提交信息格式。示例:\n\n`,
       )
       }    ${pico.green(`feat(compiler): add 'comments' option`)}\n`
       + `    ${pico.green(
         `fix(v-model): handle events on blur (close #28)`,
       )}\n\n${
-      pico.red(`  See .github/commit-convention.md for more details.\n`)}`,
+      pico.red(`  See .github/commit-convention.md 查看更多的提交规范.\n`)}`,
   )
   // eslint-disable-next-line node/prefer-global/process
   process.exit(1)

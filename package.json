@@ -1,6 +1,8 @@
 {
   "name": "uni-preset-vue",
   "version": "0.0.0",
+  "type": "module",
+  "description": "A fresh and elegant uniapp template, based on Vue3、Vite3、TypeScript、UvUI. 一个基于Vue3、Vite3、TypeScript、UvUI and UnoCSS的清新优雅的uniapp模版。",
   "scripts": {
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
@@ -88,5 +90,13 @@
     "typescript": "^4.9.4",
     "vite": "4.3.5",
     "vue-tsc": "^1.0.24"
+  },
+  "lint-staged": {
+    "*.{js,jsx, ts, tsx, json, vue}": [
+      "eslint --fix"
+    ],
+    "src/*/**.{css,scss,vue}": [
+      "stylelint --fix"
+    ]
   }
 }

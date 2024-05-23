@@ -9,7 +9,7 @@ const title = ref('Hello')
     <image class="logo" src="/static/logo.png" />
     <view class="text-area">
       <text class="title">
-        {{ title }}
+        {{ title }} 随便写一点儿东西
       </text>
     </view>
   </view>
