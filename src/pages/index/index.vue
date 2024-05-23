@@ -1,49 +1,27 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const title = ref('Hello')
+<script>
+export default {
+  name: 'Index',
+}
 </script>
 
 <template>
-  <view class="content">
-    <image class="logo" src="/static/logo.png" />
-    <view class="text-area">
-      <text class="title">
-        {{ title }} 随便写一点儿东西
-      </text>
-    </view>
+  <view class="container">
+    <uv-button type="primary" text="确定" />
+    <uv-button type="primary" :plain="true" text="镂空" />
+    <uv-button type="primary" :plain="true" :hairline="true" text="细边" />
+    <uv-button type="primary" :disabled="disabled" text="禁用" />
+    <uv-button type="primary" loading loading-text="加载中" />
+    <uv-button type="primary" icon="map" text="图标按钮" />
+    <uv-button type="primary" shape="circle" text="按钮形状" />
+    <uv-button text="渐变色按钮" color="linear-gradient(to right, rgb(66, 83, 216), rgb(213, 51, 186))" />
+    <uv-button type="primary" size="small" text="大小尺寸" />
   </view>
 </template>
 
 <style lang="scss" scoped>
-$bgColor: #f5f5f5;
-
-.content {
-  display: flex;
-  overflow: hidden;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: $bgColor;
-  font-size: 15px;
-  color: #8f8f94;
-
-  .logo {
-    margin: 200rpx auto 50rpx;
-    width: 200rpx;
-    height: 200rpx;
-  }
-
-  .text-area {
-    display: flex;
-    justify-content: center;
-  }
-
-  .title {
-    font-size: 36rpx;
-    color: #8f8f94;
-  }
+.contanier {
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
 }
 </style>

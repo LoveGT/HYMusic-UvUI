@@ -7,6 +7,8 @@
   <!-- App.vue -->
 </template>
 
-  <style>
-    /* 在这里编写CSS样式 */
+<style lang="scss">
+/* 在这里编写CSS样式 */
+
+/* @import url('@climblee/uv-ui/index.scss'); */
 </style>
