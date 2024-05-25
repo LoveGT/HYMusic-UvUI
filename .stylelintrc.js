@@ -275,4 +275,4 @@ module.exports = {
     ],
     'rule-empty-line-before': 'always-multi-line',
   },
-};
+}
