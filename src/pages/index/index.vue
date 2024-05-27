@@ -8,7 +8,8 @@ const appStore = useAppStore()
 <template>
   <view class="home">
     <text> {{ appStore.count }} </text>
-    <uv-button type="primary" @click="increment">
+    <text> {{ appStore.douCount }}</text>
+    <uv-button type="primary" @click="appStore.increment">
       Increment2
     </uv-button>
   </view>
