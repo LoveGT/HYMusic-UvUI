@@ -13,6 +13,9 @@ module.exports = {
   ],
   rules: {
     'unit-no-unknown': [true, { ignoreUnits: ['rpx'] }],
+    'selector-pseudo-element-no-unknown': [true, {
+      ignorePseudoClasses: ['deep', 'global'],
+    }],
     'order/order': ['custom-properties', 'declarations'],
     'order/properties-order': [
       // 布局属性

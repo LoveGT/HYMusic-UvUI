@@ -90,6 +90,9 @@
     "stylelint-order": "^6.0.4",
     "stylelint-scss": "^6.3.0",
     "typescript": "^4.9.4",
+    "unocss": "^0.61.6",
+    "unocss-preset-weapp": "^0.61.1",
+    "unplugin-unocss-attributify-wechat": "^0.1.15",
     "vite": "4.3.5",
     "vue-tsc": "^1.0.24"
   },
